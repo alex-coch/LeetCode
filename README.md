@@ -1,4 +1,4 @@
-# Python solutions for Leetcode
+# Python and C/C++ solutions for Leetcode
 
 ## Problems & Solutions
 
