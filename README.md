@@ -14,3 +14,4 @@
 | 5              | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [top_k_frequent_elements.py](src/array_hash/top_k_frequent_elements.py) | time O(n), space O(n)       | Medium |
 | 6              | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [product_of_array_except_self.py](src/array_hash/product_of_array_except_self.py) | time O(n), space O(1)       | Medium |
 | 7              | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [valid_sudoku.py](src/array_hash/valid_sudoku.py) | time O(1), space O(1)       | Medium |
+| 8              | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [longest_consecutive_sequence.py](src/array_hash/longest_consecutive_sequence.py) | time O(n), space O(n)       | Medium |
