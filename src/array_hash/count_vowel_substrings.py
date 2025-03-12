@@ -17,5 +17,3 @@ class Solution:
 
         return result
 
-
-print(Solution().countVowelSubstrings("aeiouuka"))
