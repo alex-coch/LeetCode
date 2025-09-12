@@ -1,5 +1,3 @@
-from itertools import permutations
-
 class Solution:
     def generateParenthesis(self, n: int) -> list[str]:
         res = []
