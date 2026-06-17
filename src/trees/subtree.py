@@ -4,6 +4,18 @@ from src.trees.support import TreeNode, build_tree
 
 
 class Solution:
+    def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
+        if not root and not subRoot:
+            return True
+
+        if root and not subRoot or not root and subRoot:
+            return False
+
+        if root.val == subRoot.val and self.isSameTree(root, subRoot):
+            return True
+
+        return self.isSubtree(root.left, subRoot) or self.isSubtree(root.right, subRoot)
+
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         if not p and not q:
             return True
@@ -22,19 +34,7 @@ class Solution:
 
         return True
 
+root = build_tree([3,4,5,1,2])
+subRoot = build_tree([4,1,2])
 
-p = build_tree([])
-q = build_tree([0])
-print(Solution().isSameTree(p, q))
-
-p = build_tree([1,2,3])
-q = build_tree([1,2,3])
-print(Solution().isSameTree(p, q))
-
-p = build_tree([1,2])
-q = build_tree([1, None, 2])
-print(Solution().isSameTree(p, q))
-
-p = build_tree([1,2,1])
-q = build_tree([1,1,2])
-print(Solution().isSameTree(p, q))
+print(Solution().isSubtree(root, subRoot))
